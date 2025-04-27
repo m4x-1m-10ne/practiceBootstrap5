@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практические задания 5.1-5.5</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .task-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 2px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Практические задания к теме 5</h1>
+        <div class="task-section">
+            <h2 class="task">Практическое задание 5.1 - Группы кнопок Bootstrap</h2>
+            <div class="btn-toolbar"> 
+                <div class="btn-group btn-group-lg"> 
+                    <button type="button" class="btn btn-default">lg</button> 
+                    <button type="button" class="btn btn-default">lg</button> 
+                </div> 
+                <div class="btn-group"> 
+                    <button type="button" class="btn btn-default">btn</button> 
+                    <button type="button" class="btn btn-default">btn</button> 
+                </div> 
+                <div class="btn-group btn-group-sm"> 
+                    <button type="button" class="btn btn-default">sm</button> 
+                    <button type="button" class="btn btn-default">sm</button> 
+                </div> 
+                <div class="btn-group btn-group-xs"> 
+                    <button type="button" class="btn btn-default">xs</button> 
+                    <button type="button" class="btn btn-default">xs</button> 
+                </div> 
+            </div>
+            
+            <br> 
+            <div class="btn-group-vertical"> 
+                <button type="button" class="btn btn-default">1</button> 
+                <button type="button" class="btn btn-default">2</button> 
+                <div class="btn-group"> 
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 
+                        Меню <span class="caret"></span> 
+                    </button> 
+                    <ul class="dropdown-menu" role="menu"> 
+                        <li><a href="#">Пункт 1</a></li> 
+                        <li><a href="#">Пункт 2</a></li> 
+                    </ul> 
+                </div> 
+            </div>
+            
+            <br><br> 
+            <div class="btn-group btn-group-justified"> 
+                <div class="btn-group"> 
+                    <button type="button" class="btn btn-default">Первая</button> 
+                </div> 
+                <div class="btn-group"> 
+                    <button type="button" class="btn btn-default">Вторая</button> 
+                </div> 
+                <div class="btn-group"> 
+                    <button type="button" class="btn btn-default">Третья</button> 
+                </div> 
+            </div>
+        </div>
+
+        <div class="task-section">
+            <h2 class="task">Практическое задание 5.2 - Группы ввода Bootstrap</h2>
+            <div class="row"> 
+                <div class="col-md-4"> 
+                    <div class="input-group input-group-lg"> 
+                        <span class="input-group-addon">E-mail</span> 
+                        <input type="text" class="form-control"> 
+                    </div> 
+                </div> 
+                <div class="col-md-4"> 
+                    <div class="input-group"> 
+                        <input type="text" class="form-control"> 
+                        <span class="input-group-addon">@</span> 
+                    </div> 
+                </div> 
+                <div class="col-md-4"> 
+                    <div class="input-group input-group-sm"> 
+                        <span class="input-group-addon">E-mail</span> 
+                        <input type="text" class="form-control"> 
+                        <span class="input-group-addon">@</span> 
+                    </div> 
+                </div> 
+            </div>     
+            
+            <div class="row" style="margin-top: 20px;"> 
+                <div class="col-md-6"> 
+                    <div class="input-group"> 
+                        <span class="input-group-addon"> 
+                            <input type="checkbox"> 
+                        </span> 
+                        <input type="text" class="form-control"> 
+                    </div> 
+                </div> 
+                <div class="col-md-6"> 
+                    <div class="input-group"> 
+                        <span class="input-group-addon"> 
+                            <input type="radio"> 
+                        </span> 
+                        <input type="text" class="form-control"> 
+                    </div> 
+                </div> 
+            </div> 
+            
+            <div class="row" style="margin-top: 20px;"> 
+                <div class="col-md-6"> 
+                    <div class="input-group"> 
+                        <span class="input-group-btn"> 
+                            <button class="btn btn-default" type="button">Кнопка</button> 
+                        </span> 
+                        <input type="text" class="form-control"> 
+                    </div> 
+                </div> 
+                <div class="col-md-6"> 
+                    <div class="input-group"> 
+                        <div class="input-group-btn"> 
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 
+                                Действие <span class="caret"></span>
+                            </button> 
+                            <ul class="dropdown-menu" role="menu"> 
+                                <li><a href="#">Действие</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Другое</a></li> 
+                            </ul> 
+                        </div> 
+                        <input type="text" class="form-control"> 
+                    </div> 
+                </div> 
+            </div>
+        </div>
+
+        <div class="task-section">
+            <h2 class="task">Практическое задание 5.3 - Фиксированная навигационная панель</h2>
+            <div class="row"> 
+                <div class="col-md-12"> 
+                    <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse" role="navigation"> 
+                        <div class="container-fluid"> 
+                            <form class="navbar-form navbar-left"> 
+                                <div class="form-group"> 
+                                    <input type="text" class="form-control" placeholder="Поиск"> 
+                                </div> 
+                                <button type="submit" class="btn btn-default">Поиск</button> 
+                            </form> 
+                            <p class="navbar-text navbar-right">Вы вошли как  
+                                <a href="#" class="navbar-link">Иван Иванов</a> 
+                            </p> 
+                        </div> 
+                    </nav> 
+                </div> 
+            </div>
+        </div>
+
+        <div class="task-section">
+            <h2 class="task">Практическое задание 5.4 - Работа с миниатюрами</h2>
+            <div class="row"> 
+                <div class="col-xs-6 col-md-2"> 
+                    <a href="#" class="thumbnail"> 
+                        <img src="https://via.placeholder.com/135x180" alt="..." width="135" height="180"> 
+                    </a> 
+                </div> 
+                <div class="col-sm-6 col-md-3"> 
+                    <div class="thumbnail"> 
+                        <img src="https://via.placeholder.com/193x250" alt="..." width="250"> 
+                        <div class="caption"> 
+                            <h4>Название изображения</h4> 
+                            <p>Описание изображения. Синий прямоугольник размером 193 на 200 пикселей.</p> 
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">Кнопка "Да"</a> 
+                                <a href="#" class="btn btn-default" role="button">Кнопка "Нет"</a>
+                            </p> 
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="task-section">
+            <h2 class="task">Практическое задание 5.5 - Создание средней модульной сетки</h2>
+            <div class="row"> 
+                <div class="col-md-6"> 
+                <ul class="list-group"> 
+                    <li class="list-group-item">Первый пункт</li> 
+                    <a href="#" class="list-group-item active"> 
+                    Второй пункт</a> 
+                    <li class="list-group-item disabled">Третий пункт</li> 
+                    <li class="list-group-item active"> 
+                    <h4 class="list-group-item-heading">Заголовок пункта списка</h4> 
+                    <p class="list-group-item-text">Описание четвёртого пункта списка</p> 
+                    </li> 
+                </ul> 
+                </div> 
+                <div class="col-md-6"> 
+                <ul class="list-group"> 
+                    <li class="list-group-item list-group-item-success">.list-group-item-success</li> 
+                    <li class="list-group-item list-group-item-info">.list-group-item-info</li> 
+                    <li class="list-group-item list-group-item-warning">.list-group-item-warning</li>  
+                    <li class="list-group-item list-group-item-danger">.list-group-item-danger</li> 
+                </ul>
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
